@@ -2,15 +2,12 @@
   "name": "classnames-bem",
   "version": "1.0.2",
   "main": "dist/bem.js",
+  "typings": "dist/index",
   "license": "MIT",
   "scripts": {
     "build": "tsc",
     "test": "jest"
   },
-  "files": [
-    "src/*.ts",
-    "dst/**/*"
-  ],
   "dependencies": {
     "classnames": "^2.2.6"
   },

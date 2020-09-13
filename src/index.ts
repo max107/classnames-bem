@@ -1,6 +1,6 @@
 import cx from 'classnames';
 
-export const bem = (base: string, ...mods: any): string => {
+export const index = (base: string, ...mods: any): string => {
   const result = [];
 
   for (let i = 0; i < mods.length; i++) {

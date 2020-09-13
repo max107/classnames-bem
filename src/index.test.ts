@@ -1,12 +1,12 @@
-import { bem } from './bem';
+import { index } from './bem';
 
 describe('bem', () => {
   test('bem', () => {
-    expect(bem('block__element', {
+    expect(index('block__element', {
       foo: true,
       bar: false
     })).toEqual('block__element block__element--foo');
-    expect(bem('block', {
+    expect(index('block', {
       foo: true,
       bar: false
     })).toEqual('block block--foo');
