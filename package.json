@@ -1,7 +1,7 @@
 {
   "name": "classnames-bem",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "dist/bem.js",
   "license": "MIT",
   "scripts": {
     "build": "tsc",
