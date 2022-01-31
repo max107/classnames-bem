@@ -1,9 +1,7 @@
 {
   "name": "classnames-bem",
   "version": "1.0.6",
-  "main": "dist/index",
-  "typings": "dist/index",
-  "types": "./dist/index.d.ts",
+  "main": "dist/index.js",
   "license": "MIT",
   "files": [
     "dist/*"
