@@ -1,15 +1,11 @@
 import cx from 'classnames';
 
-export const bem = (base: string, ...mods: any): string => {
-  const result = [];
+export type Modifiers = genericTypes | { [key: string]: genericTypes }
 
-  for (let i = 0; i < mods.length; i++) {
-    const modifiers = cx(mods[i])
-      .split(' ')
-      .filter((n: any) => n)
-      .map(modifier => `${base}--${modifier}`);
-    result.push(modifiers);
-  }
+type genericTypes = null | undefined | boolean | string | (null | undefined | boolean | string)[]
 
-  return cx(base, result);
-};
+export const bem = (base: string, ...mods: Modifiers[]): string => cx(base, mods.map(mod => cx(mod)
+    .split(' ')
+    .filter((n: string) => n)
+    .map(modifier => `${base}--${modifier}`)
+));
